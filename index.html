@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>PixelCraft Labs — Engineering Premium Digital Experiences</title>
+  <meta name="description" content="PixelCraft Labs designs and develops world-class websites, native mobile applications, and high-performance SEO strategies. Turning ideas into digital reality.">
+  <meta name="keywords" content="digital agency, software development, mobile development, iOS development, Android development, Kotlin Multiplatform, KMP, Jetpack Compose, Kotlin, Supabase, Firebase, PixelCraft Labs">
+  <meta name="author" content="PixelCraft Labs">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pixelcraftlabs.com/">
+  <meta property="og:title" content="PixelCraft Labs — Engineering Premium Digital Experiences">
+  <meta property="og:description" content="We design and develop world-class websites, mobile applications, and SEO strategies that help businesses scale. Inspired by premium tech aesthetics.">
+  <meta property="og:image" content="https://pixelcraftlabs.com/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pixelcraftlabs.com/">
+  <meta property="twitter:title" content="PixelCraft Labs — Engineering Premium Digital Experiences">
+  <meta property="twitter:description" content="We design and develop world-class websites, mobile applications, and SEO strategies that help businesses scale. Inspired by premium tech aesthetics.">
+  <meta property="twitter:image" content="https://pixelcraftlabs.com/og-image.jpg">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='80' height='80' x='10' y='10' rx='20' fill='%230F172A'/%3E%3Crect width='30' height='30' x='35' y='35' rx='8' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232563EB'/%3E%3Cstop offset='100%25' stop-color='%2306B6D4'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "PixelCraft Labs",
+      "alternateName": "PixelCraft",
+      "url": "https://pixelcraftlabs.com",
+      "logo": "https://pixelcraftlabs.com/logo.png",
+      "description": "PixelCraft Labs designs and develops world-class websites, mobile applications, and SEO strategies that help businesses grow faster.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-80983-36237",
+        "contactType": "customer support",
+        "email": "noorulakbar32@gmail.com",
+        "availableLanguage": ["English"]
+      },
+      "sameAs": [
+        "https://github.com/pixelcraftlabs",
+        "https://twitter.com/pixelcraftlabs",
+        "https://linkedin.com/company/pixelcraftlabs"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Development",
+            "description": "Native Mobile Apps, Cross-Platform Applications, Kotlin Multiplatform, Jetpack Compose, Firebase, Supabase"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile & Cross-Platform Apps",
+            "description": "Native iOS, Native Android, Kotlin Multiplatform, KMP, Jetpack Compose"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Technical SEO Optimization",
+            "description": "Core Web Vitals tuning, schema markup, performance engineering"
+          }
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+  <div id="custom-cursor-dot"></div>
+
+
+
+  <!-- Floating Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="main-nav">
+      <a href="#home" class="nav-logo" aria-label="PixelCraft Labs Home">
+        <img src="/logo-custom.jpg" alt="PixelCraft Labs Logo" class="logo-icon" width="36" height="36" style="border-radius:50%;">
+        <span class="logo-text">PixelCraft <span class="logo-accent">Labs</span></span>
+      </a>
+
+      <div class="nav-links">
+        <div class="nav-active-bg"></div>
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#services" class="nav-item">Services</a>
+        <a href="#why-us" class="nav-item">Why Us</a>
+        <a href="#process" class="nav-item">Process</a>
+        <a href="#portfolio" class="nav-item">Work</a>
+        <a href="#contact" class="nav-item">Contact</a>
+        <a href="#contact" class="nav-item nav-mobile-cta">Start Project</a>
+      </div>
+
+      <!-- Sound Toggle Button -->
+      <button class="sound-toggle-btn magnetic-btn" id="sound-toggle" aria-label="Toggle Audio Feedback" style="margin-right: 8px;">
+        <svg class="sound-off-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+        <svg class="sound-on-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </button>
+
+      <!-- Theme Toggle Button -->
+      <button class="theme-toggle-btn magnetic-btn" id="theme-toggle" aria-label="Toggle Color Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <a href="#contact" class="nav-cta-btn magnetic-btn">
+        <span>Start Project</span>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <!-- Interactive 3D Particle Constellation -->
+      <canvas id="hero-canvas"></canvas>
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-badge reveal-item">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Turning Ideas Into Digital Reality</span>
+          </div>
+
+          <h1 class="hero-headline">
+            <span class="line-wrapper"><span class="line-text">We Craft Premium</span></span>
+            <span class="line-wrapper"><span class="line-text gradient-text">Digital Experiences</span></span>
+          </h1>
+
+          <p class="hero-subheading reveal-item">
+            PixelCraft Labs designs and develops world-class websites, mobile applications, and SEO strategies that help businesses grow faster.
+          </p>
+
+          <div class="hero-actions reveal-item">
+            <a href="#contact" class="btn btn-primary magnetic-btn">
+              <span>Start Your Project</span>
+            </a>
+            <a href="#portfolio" class="btn btn-secondary magnetic-btn">
+              <span>View Our Work</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+          <a href="#about" aria-label="Scroll down to About section">
+            <span class="mouse-icon">
+              <span class="mouse-wheel"></span>
+            </span>
+          </a>
+        </div>
+
+        <!-- Animated Statistics Grid -->
+        <div class="hero-stats">
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years of Experience</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Mobile Apps Developed</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Collaborative Clients</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Quality Commitment</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-text">Custom</span>
+            <span class="stat-label">Software Solutions</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+            <div class="section-header text-center">
+              <h2 class="section-title">The Foundation of PixelCraft Labs</h2>
+              <p class="section-subtitle">A premium software studio delivering clean architecture, excellent performance, and beautiful native user experiences.</p>
+            </div>
+
+        <div class="about-grid">
+          <!-- Storytelling panel -->
+          <div class="story-panel glass-card">
+            <h3 class="panel-title">Our Authentic Journey</h3>
+            <p class="panel-text">
+              PixelCraft Labs was established to build production-ready digital products with uncompromising craftsmanship. While our studio is newly founded, our strength is built upon over 6 years of professional software engineering experience.
+            </p>
+            <p class="panel-text">
+              We focus exclusively on clean architecture, native responsiveness, and dedicated attention. Instead of generic templates, you communicate and collaborate directly with the founder to bring your business systems to life.
+            </p>
+            
+            <div class="vision-mission">
+              <div class="vm-item">
+                <span class="vm-icon-wrapper">
+                  <svg viewBox="0 0 24 24" class="vm-icon" width="20" height="20">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4 class="vm-title">Our Mission</h4>
+                  <p class="vm-desc">To deliver software with clean architecture, excellent performance, beautiful UI, and scalable engineering for startups and businesses.</p>
+                </div>
+              </div>
+              
+              <div class="vm-item">
+                <span class="vm-icon-wrapper">
+                  <svg viewBox="0 0 24 24" class="vm-icon" width="20" height="20">
+                    <polygon points="12 2 2 22 12 17 22 22 12 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4 class="vm-title">Our Vision</h4>
+                  <p class="vm-desc">To become one of the most trusted software development companies by consistently delivering world-class digital products.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline-panel glass-card">
+            <h3 class="panel-title">Professional Timeline</h3>
+            <div class="timeline-container">
+              <div class="timeline-line">
+                <div class="timeline-progress"></div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year font-mono">2020</span>
+                  <h4 class="timeline-title">Systems & Databases</h4>
+                  <p class="timeline-desc">Developing custom business management applications, CRM architectures, and inventory databases for local companies.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year font-mono">2022</span>
+                  <h4 class="timeline-title">Mobile Engineering</h4>
+                  <p class="timeline-desc">Focusing on Native Android development, learning Kotlin, Jetpack Compose layouts, and cross-platform UI architectures.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year font-mono">2024</span>
+                  <h4 class="timeline-title">Full Stack Platforms</h4>
+                  <p class="timeline-desc">Building modern web services, SaaS dashboards, and optimizing technical SEO to boost performance and search ranking.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year font-mono">2026</span>
+                  <h4 class="timeline-title">PixelCraft Labs Launch</h4>
+                  <p class="timeline-desc">Officially starting our premium boutique studio to deliver tailored, direct-to-engineer technical solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Founder Profile Grid Card -->
+        <div class="founder-profile-card glass-card">
+          <!-- Left Column: Quote -->
+          <div class="founder-quote-column">
+            <span class="giant-quote-mark">“</span>
+            <p class="founder-quote-text">
+              We don't build software to fill a contract. We build it to stand as a reliable, high-performance engine that supports your business growth.
+            </p>
+          </div>
+          
+          <!-- 3D Interactive Hologram Cube Container -->
+          <div class="cube-container" id="cube-container">
+            <div class="scene3d">
+              <div class="cube3d" id="cube3d">
+                <div class="cube-face front">
+                  <span class="face-icon">🤖</span>
+                  <span class="face-lbl font-mono">Mobile</span>
+                </div>
+                <div class="cube-face back">
+                  <span class="face-icon">💾</span>
+                  <span class="face-lbl font-mono">Database</span>
+                </div>
+                <div class="cube-face right">
+                  <span class="face-icon">⚡</span>
+                  <span class="face-lbl font-mono">SEO</span>
+                </div>
+                <div class="cube-face left">
+                  <span class="face-icon">📡</span>
+                  <span class="face-lbl font-mono">Telemetry</span>
+                </div>
+                <div class="cube-face top">
+                  <span class="face-icon">&lt;/&gt;</span>
+                  <span class="face-lbl font-mono">Code</span>
+                </div>
+                <div class="cube-face bottom">
+                  <span class="face-icon">⚙️</span>
+                  <span class="face-lbl font-mono">Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right Column: Biography Info -->
+          <div class="founder-bio-column">
+            <div class="founder-bio-meta">
+              <h4 class="founder-bio-name">Lead Architect</h4>
+              <span class="founder-bio-role">PixelCraft Labs</span>
+            </div>
+            
+            <div class="founder-pillars">
+              <div class="pillar-tag">
+                <span class="pillar-dot"></span>
+                <span>Native Android Mobile Systems</span>
+              </div>
+              <div class="pillar-tag">
+                <span class="pillar-dot"></span>
+                <span>Full-Stack Web Architectures</span>
+              </div>
+              <div class="pillar-tag">
+                <span class="pillar-dot"></span>
+                <span>Technical SEO & Performance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section section-padding">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <h2 class="section-title">Expertise Built on Production Experience</h2>
+          <p class="section-subtitle">We design and build bespoke software systems engineered for scale, reliability, and extreme performance.</p>
+        </div>
+
+        <div class="services-bento-grid">
+          
+          <!-- Web Development Service -->
+          <div class="service-block glass-card tilt-target">
+            <div class="service-header">
+              <div class="service-icon-box bg-blue">
+                <svg viewBox="0 0 24 24" width="28" height="28" class="service-icon">
+                  <rect x="2" y="3" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+            </div>
+            
+            <p class="service-desc">
+              High-performance web applications, administration dashboards, and landing pages custom-built to deliver microsecond responses and modern user experiences.
+            </p>
+            
+            <div class="service-details">
+              <h4 class="details-title">Custom Solutions</h4>
+              <div class="pill-group">
+                <span class="tech-pill">Business Websites</span>
+                <span class="tech-pill">Landing Pages</span>
+                <span class="tech-pill">Portfolio Websites</span>
+                <span class="tech-pill">Corporate Websites</span>
+                <span class="tech-pill">Admin Dashboards</span>
+                <span class="tech-pill">SaaS Platforms</span>
+              </div>
+
+              <h4 class="details-title">Business Value</h4>
+              <ul class="benefit-list">
+                <li><span class="check-icon">✓</span> Clean headless component architecture</li>
+                <li><span class="check-icon">✓</span> Fully responsive across all devices</li>
+                <li><span class="check-icon">✓</span> Microsecond server hydration and asset caching</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mobile App Development Service -->
+          <div class="service-block glass-card tilt-target">
+            <div class="service-header">
+              <div class="service-icon-box bg-cyan">
+                <svg viewBox="0 0 24 24" width="28" height="28" class="service-icon">
+                  <rect x="5" y="2" width="14" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <line x1="12" y1="18" x2="12" y2="18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Mobile App Development</h3>
+            </div>
+
+            <p class="service-desc">
+              Premium native and hybrid applications featuring fluid physics-based gestures, offline-first logic, and clean architectures.
+            </p>
+
+            <div class="service-details">
+              <h4 class="details-title">Core Platforms</h4>
+              <div class="pill-group">
+                <span class="tech-pill">Native Android</span>
+                <span class="tech-pill">Kotlin</span>
+                <span class="tech-pill">Jetpack Compose</span>
+                <span class="tech-pill">Kotlin Multiplatform (KMP)</span>
+                <span class="tech-pill">Supabase</span>
+                <span class="tech-pill">Firebase</span>
+              </div>
+
+              <h4 class="details-title">Business Value</h4>
+              <ul class="benefit-list">
+                <li><span class="check-icon">✓</span> 60 FPS fluid rendering and gestures</li>
+                <li><span class="check-icon">✓</span> Secure offline-first databases</li>
+                <li><span class="check-icon">✓</span> Dedicated Play Store & App Store deployments</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Search Engine Optimization (SEO) -->
+          <div class="service-block glass-card tilt-target">
+            <div class="service-header">
+              <div class="service-icon-box bg-emerald">
+                <svg viewBox="0 0 24 24" width="28" height="28" class="service-icon">
+                  <line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Technical SEO & Speed</h3>
+            </div>
+
+            <p class="service-desc">
+              Organic search performance is won in the codebase. We optimize rendering cycles, compress assets, and structure metadata for crawlers.
+            </p>
+
+            <div class="service-details">
+              <h4 class="details-title">Core Focus Areas</h4>
+              <div class="pill-group">
+                <span class="tech-pill">Technical SEO</span>
+                <span class="tech-pill">Performance Optimization</span>
+                <span class="tech-pill">Google Search Optimization</span>
+                <span class="tech-pill">Core Web Vitals</span>
+                <span class="tech-pill">Website Speed Optimization</span>
+                <span class="tech-pill">Google Business Profile</span>
+              </div>
+
+              <h4 class="details-title">Business Value</h4>
+              <ul class="benefit-list">
+                <li><span class="check-icon">✓</span> 100/100 Lighthouse performance metrics</li>
+                <li><span class="check-icon">✓</span> Rapid search indexing and structural schemas</li>
+                <li><span class="check-icon">✓</span> Structured local discovery optimization</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Maintenance & Support -->
+          <div class="service-block glass-card tilt-target">
+            <div class="service-header">
+              <div class="service-icon-box bg-indigo">
+                <svg viewBox="0 0 24 24" width="28" height="28" class="service-icon">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 8V12L14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Maintenance & Support</h3>
+            </div>
+
+            <p class="service-desc">
+              Post-launch support to keep your software platforms secure, fast, and fully functional as technologies and user demands evolve.
+            </p>
+
+            <div class="service-details">
+              <h4 class="details-title">Support Coverage</h4>
+              <div class="pill-group">
+                <span class="tech-pill">Bug Fixing</span>
+                <span class="tech-pill">App Updates</span>
+                <span class="tech-pill">Website Maintenance</span>
+                <span class="tech-pill">Performance Improvements</span>
+                <span class="tech-pill">Security Patching</span>
+                <span class="tech-pill">Direct SLA Support</span>
+              </div>
+
+              <h4 class="details-title">Business Value</h4>
+              <ul class="benefit-list">
+                <li><span class="check-icon">✓</span> Continuous system health monitoring</li>
+                <li><span class="check-icon">✓</span> Rapid-response bug fixing directly from the developer</li>
+                <li><span class="check-icon">✓</span> Full compatibility updates for iOS/Android changes</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SYSTEMS ARCHITECTURE VISUALIZER -->
+    <section id="architecture" class="architecture-section section-padding">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <h2 class="section-title">Systems Architecture Visualizer</h2>
+          <p class="section-subtitle">Interact with our backend telemetry model. Hover or click to simulate real-time synchronization.</p>
+        </div>
+
+        <div class="architecture-grid">
+          
+          <!-- Left: Controls & Descriptions -->
+          <div class="architecture-controls glass-card">
+            <h3 class="controls-headline">System Telemetry Control</h3>
+            <p class="controls-desc">
+              We design robust, low-latency architectures that coordinate databases, API routers, and caching layers with custom mobile and web clients. Use the controls below to trigger live simulation flows.
+            </p>
+
+            <div class="flow-buttons">
+              <button class="flow-btn active" id="btn-flow-api">
+                <span class="btn-dot bg-cyan"></span>
+                <span class="btn-lbl">API Cache Verification</span>
+              </button>
+              <button class="flow-btn" id="btn-flow-db">
+                <span class="btn-dot bg-indigo"></span>
+                <span class="btn-lbl">Database Query Sync</span>
+              </button>
+              <button class="flow-btn" id="btn-flow-ws">
+                <span class="btn-dot bg-emerald"></span>
+                <span class="btn-lbl">WebSocket Real-Time Sync</span>
+              </button>
+            </div>
+
+            <!-- Active flow details card -->
+            <div class="flow-details" id="flow-details-panel">
+              <h4 class="flow-details-title" id="flow-title">API Cache Verification</h4>
+              <p class="flow-details-desc" id="flow-desc">
+                The client requests data from the API Gateway. The Gateway first checks our Redis memory caching layer (latencies &lt; 5ms). If found, it bypasses the primary database, saving CPU overhead and loading data instantly.
+              </p>
+              <div class="flow-telemetry font-mono">
+                <div>
+                  <span class="telemetry-lbl">Network Latency:</span>
+                  <span class="telemetry-val text-accent" id="telemetry-latency">12ms</span>
+                </div>
+                <div>
+                  <span class="telemetry-lbl">Primary Load:</span>
+                  <span class="telemetry-val text-accent" id="telemetry-load">0.02%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive SVG diagram -->
+          <div class="architecture-svg-wrapper glass-card">
+            <svg viewBox="0 0 500 350" class="architecture-svg" id="architecture-svg">
+              <!-- Define connection gradients -->
+              <defs>
+                <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="var(--accent-cyan)" stop-opacity="0.1"/>
+                  <stop offset="50%" stop-color="var(--accent-cyan)" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="var(--accent-cyan)" stop-opacity="0.1"/>
+                </linearGradient>
+                <linearGradient id="indigo-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="var(--accent-blue)" stop-opacity="0.1"/>
+                  <stop offset="50%" stop-color="var(--accent-blue)" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="var(--accent-blue)" stop-opacity="0.1"/>
+                </linearGradient>
+                <linearGradient id="emerald-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="var(--accent-emerald)" stop-opacity="0.1"/>
+                  <stop offset="50%" stop-color="var(--accent-emerald)" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="var(--accent-emerald)" stop-opacity="0.1"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Connection Paths -->
+              <g class="svg-paths">
+                <!-- Path 1: Client to Gateway -->
+                <path id="path-client-gateway" d="M 80 200 L 250 200" fill="none" stroke="var(--border-light)" stroke-width="2"/>
+                <!-- Path 2: Gateway to Cache -->
+                <path id="path-gateway-cache" d="M 250 200 Q 300 120 350 80" fill="none" stroke="var(--border-light)" stroke-width="2"/>
+                <!-- Path 3: Gateway to DB -->
+                <path id="path-gateway-db" d="M 250 200 Q 350 220 450 200" fill="none" stroke="var(--border-light)" stroke-width="2"/>
+              </g>
+
+              <!-- Animated Data Packets (Circles that travel along the paths) -->
+              <g class="svg-packets">
+                <!-- Packet 1: Client to Gateway -->
+                <circle id="pkt-client-gateway" r="4" fill="var(--accent-cyan)" opacity="0">
+                  <animateMotion id="anim-client-gateway" dur="0.6s" repeatCount="1" fill="freeze" begin="indefinite">
+                    <mpath href="#path-client-gateway"/>
+                  </animateMotion>
+                </circle>
+                <!-- Packet 2: Gateway to Client -->
+                <circle id="pkt-gateway-client" r="4" fill="var(--accent-cyan)" opacity="0">
+                  <animateMotion id="anim-gateway-client" dur="0.6s" repeatCount="1" fill="freeze" begin="indefinite">
+                    <mpath href="#path-client-gateway"/>
+                  </animateMotion>
+                </circle>
+                
+                <!-- Packet 3: Gateway to Cache -->
+                <circle id="pkt-gateway-cache" r="4" fill="var(--accent-cyan)" opacity="0">
+                  <animateMotion id="anim-gateway-cache" dur="0.5s" repeatCount="1" fill="freeze" begin="indefinite">
+                    <mpath href="#path-gateway-cache"/>
+                  </animateMotion>
+                </circle>
+                <!-- Packet 4: Cache to Gateway -->
+                <circle id="pkt-cache-gateway" r="4" fill="var(--accent-cyan)" opacity="0">
+                  <animateMotion id="anim-cache-gateway" dur="0.5s" repeatCount="1" fill="freeze" begin="indefinite">
+                    <mpath href="#path-gateway-cache"/>
+                  </animateMotion>
+                </circle>
+
+                <!-- Packet 5: Gateway to DB -->
+                <circle id="pkt-gateway-db" r="4" fill="var(--accent-blue)" opacity="0">
+                  <animateMotion id="anim-gateway-db" dur="0.7s" repeatCount="1" fill="freeze" begin="indefinite">
+                    <mpath href="#path-gateway-db"/>
+                  </animateMotion>
+                </circle>
+                <!-- Packet 6: DB to Gateway -->
+                <circle id="pkt-db-gateway" r="4" fill="var(--accent-blue)" opacity="0">
+                  <animateMotion id="anim-db-gateway" dur="0.7s" repeatCount="1" fill="freeze" begin="indefinite">
+                    <mpath href="#path-gateway-db"/>
+                  </animateMotion>
+                </circle>
+              </g>
+
+              <!-- Node Points -->
+              <g class="svg-nodes">
+                <!-- Node A: Client App -->
+                <g class="svg-node" id="node-client">
+                  <circle cx="80" cy="200" r="28" fill="var(--bg-secondary)" stroke="var(--border-light)" stroke-width="2"/>
+                  <circle cx="80" cy="200" r="18" fill="rgba(6, 182, 212, 0.15)" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+                  <text x="80" y="246" text-anchor="middle" class="node-label font-mono">Client App</text>
+                  <text x="80" y="204" text-anchor="middle" font-size="11" fill="var(--accent-cyan)" font-weight="bold">&lt;/&gt;</text>
+                </g>
+
+                <!-- Node B: API Gateway -->
+                <g class="svg-node" id="node-gateway">
+                  <circle cx="250" cy="200" r="32" fill="var(--bg-secondary)" stroke="var(--border-light)" stroke-width="2"/>
+                  <circle cx="250" cy="200" r="22" fill="rgba(99, 102, 241, 0.15)" stroke="var(--accent-blue)" stroke-width="1.5"/>
+                  <text x="250" y="250" text-anchor="middle" class="node-label font-mono">API Gateway</text>
+                  <text x="250" y="204" text-anchor="middle" font-size="11" fill="var(--accent-blue)" font-weight="bold">Router</text>
+                </g>
+
+                <!-- Node C: Cache Store -->
+                <g class="svg-node" id="node-cache">
+                  <circle cx="350" cy="80" r="24" fill="var(--bg-secondary)" stroke="var(--border-light)" stroke-width="2"/>
+                  <circle cx="350" cy="80" r="14" fill="rgba(6, 182, 212, 0.15)" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+                  <text x="350" y="122" text-anchor="middle" class="node-label font-mono">Redis Cache</text>
+                  <text x="350" y="84" text-anchor="middle" font-size="9" fill="var(--accent-cyan)" font-weight="bold">RAM</text>
+                </g>
+
+                <!-- Node D: Primary DB -->
+                <g class="svg-node" id="node-db">
+                  <circle cx="450" cy="200" r="30" fill="var(--bg-secondary)" stroke="var(--border-light)" stroke-width="2"/>
+                  <circle cx="450" cy="200" r="20" fill="rgba(16, 185, 129, 0.15)" stroke="var(--accent-emerald)" stroke-width="1.5"/>
+                  <text x="450" y="248" text-anchor="middle" class="node-label font-mono">PostgreSQL</text>
+                  <text x="450" y="204" text-anchor="middle" font-size="11" fill="var(--accent-emerald)" font-weight="bold">DB</text>
+                </g>
+              </g>
+
+              <!-- WebSocket Continuous Sync Lines (Only visible in WS flow) -->
+              <path id="ws-pulse-line" d="M 80 200 L 250 200 L 450 200" fill="none" stroke="var(--accent-emerald)" stroke-width="2" stroke-dasharray="8, 8" opacity="0">
+                <animate attributeName="stroke-dashoffset" values="50;0" dur="2s" repeatCount="indefinite" />
+              </path>
+            </svg>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section id="why-us" class="why-us-section section-padding">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <h2 class="section-title">The PixelCraft Distinction</h2>
+          <p class="section-subtitle">Why startups and local businesses collaborate directly with an experienced software engineer.</p>
+        </div>
+
+        <div class="comparison-container glass-card">
+          <div class="comparison-grid">
+            <div class="comparison-header font-mono">Core Value</div>
+            <div class="comparison-header font-mono text-center">Traditional Agency</div>
+            <div class="comparison-header font-mono text-center text-accent">PixelCraft Labs</div>
+
+            <!-- Row 1 -->
+            <div class="comparison-cell label-cell">Personal Attention</div>
+            <div class="comparison-cell text-center">Account managers, delayed ticket responses, outsourced work</div>
+            <div class="comparison-cell text-center positive-cell">Direct developer-to-client communication with the founder</div>
+
+            <!-- Row 2 -->
+            <div class="comparison-cell label-cell">Premium UI/UX</div>
+            <div class="comparison-cell text-center">Rehashed templates and generic drag-and-drop builder pages</div>
+            <div class="comparison-cell text-center positive-cell">Performance-focused development, custom layouts, fluid transitions</div>
+
+            <!-- Row 3 -->
+            <div class="comparison-cell label-cell">Modern Technologies</div>
+            <div class="comparison-cell text-center">Bloated CMS layouts, old security dependencies, slow pages</div>
+            <div class="comparison-cell text-center positive-cell">Kotlin, Jetpack Compose, Kotlin Multiplatform (KMP), Firebase, Supabase</div>
+
+            <!-- Row 4 -->
+            <div class="comparison-cell label-cell">Transparency</div>
+            <div class="comparison-cell text-center">Opaque progress tracking, siloed code repositories</div>
+            <div class="comparison-cell text-center positive-cell">Transparent communication, clear roadmap steps, live developer links</div>
+
+            <!-- Row 5 -->
+            <div class="comparison-cell label-cell">Architecture</div>
+            <div class="comparison-cell text-center">Monolithic setups difficult to scale or migrate</div>
+            <div class="comparison-cell text-center positive-cell">Scalable clean architecture built for future extensions</div>
+
+            <!-- Row 6 -->
+            <div class="comparison-cell label-cell">Support</div>
+            <div class="comparison-cell text-center">Expensive maintenance contracts or zero post-launch help</div>
+            <div class="comparison-cell text-center positive-cell">Long-term technical support, direct bug fixing, SLA updates</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="process" class="process-section section-padding">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <h2 class="section-title">Our Impeccable Pipeline</h2>
+          <p class="section-subtitle">Every project passes through our optimized pipeline, ensuring zero drift between vision and final production release.</p>
+        </div>
+
+        <!-- Laser-Tracked Interactive Process Timeline -->
+        <div class="timeline-container" id="timeline-container">
+          <!-- The Vertical Track Line -->
+          <div class="timeline-track">
+            <div class="timeline-progress" id="timeline-progress"></div>
+            <div class="timeline-laser" id="timeline-laser"></div>
+          </div>
+
+          <div class="timeline-steps">
+            
+            <!-- Step 1: Discovery -->
+            <div class="timeline-step" data-step="1">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-card">
+                <span class="step-num font-mono">01</span>
+                <span class="step-tag">PHASE ONE</span>
+                <h3 class="step-title">Discovery & Tech Mapping</h3>
+                <p class="step-desc">
+                  We align directly with your business goals, draft full project functional specifications, perform architecture consulting, and map the optimal modern technology stack.
+                </p>
+                <div class="step-deliverables font-mono">
+                  <span>Scope Blueprint</span>
+                  <span>Stack Architecture</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Blueprinting -->
+            <div class="timeline-step" data-step="2">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-card">
+                <span class="step-num font-mono">02</span>
+                <span class="step-tag">PHASE TWO</span>
+                <h3 class="step-title">System Architecture</h3>
+                <p class="step-desc">
+                  We construct high-fidelity UI/UX design wireframes, map secure database schemas, model data workflows, and draft complete REST API or WebSocket connection definitions.
+                </p>
+                <div class="step-deliverables font-mono">
+                  <span>API Definitions</span>
+                  <span>UI Wireframes</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Development -->
+            <div class="timeline-step" data-step="3">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-card">
+                <span class="step-num font-mono">03</span>
+                <span class="step-tag">PHASE THREE</span>
+                <h3 class="step-title">Sprint Development</h3>
+                <p class="step-desc">
+                  We build your product in test-driven sprints, developing scalable clean architectures in Kotlin, Jetpack Compose, or Kotlin Multiplatform (KMP), and integrating real-time backends.
+                </p>
+                <div class="step-deliverables font-mono">
+                  <span>Production Code</span>
+                  <span>Sprint Checks</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Quality Audit -->
+            <div class="timeline-step" data-step="4">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-card">
+                <span class="step-num font-mono">04</span>
+                <span class="step-tag">PHASE FOUR</span>
+                <h3 class="step-title">Quality Audit & Performance</h3>
+                <p class="step-desc">
+                  We run comprehensive debugging suites, perform performance profiling (aiming for 95+ Core Web Vitals scores), execute security tests, and deploy beta builds for user testing.
+                </p>
+                <div class="step-deliverables font-mono">
+                  <span>Lighthouse Audit</span>
+                  <span>Security Report</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 5: Launch & Support -->
+            <div class="timeline-step" data-step="5">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-card">
+                <span class="step-num font-mono">05</span>
+                <span class="step-tag">PHASE FIVE</span>
+                <h3 class="step-title">Production Release & Support</h3>
+                <p class="step-desc">
+                  We deploy your platform to globally distributed edge servers, publish apps to Android Google Play Store, and establish long-term SLA support.
+                </p>
+                <div class="step-deliverables font-mono">
+                  <span>Play Store Launch</span>
+                  <span>Maintenance SLA</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio-tunnel-section">
+      <div class="portfolio-tunnel-sticky">
+        <!-- Floating Section Header Overlay -->
+        <div class="tunnel-header-overlay">
+          <div class="container text-center">
+            <span class="tunnel-category font-mono">SELECTED CASE STUDIES</span>
+            <h2 class="tunnel-title">Interactive 3D Showroom</h2>
+          </div>
+        </div>
+        
+        <!-- WebGL Tunnel Container -->
+        <div id="portfolio-tunnel-container"></div>
+      </div>
+    </section>
+
+    <!-- TECH STACK SECTION -->
+    <section id="tech-stack" class="tech-stack-section section-padding">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <h2 class="section-title">Our Interactive Tech Ecosystem</h2>
+          <p class="section-subtitle">We select only the most robust frameworks and platforms. Hover your cursor to interact with our stack.</p>
+        </div>
+
+        <div id="tech-constellation-container">
+          <div id="tech-details" class="glass-card" style="position: absolute; bottom: 20px; left: 20px; padding: 20px; width: 280px; pointer-events: none; z-index: 10; opacity: 0; transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); transform: translateY(10px);">
+            <h4 id="tech-details-title" style="margin:0 0 8px 0; font-family: var(--font-display); font-weight:700; font-size:1.15rem; color:var(--text-primary); display:flex; align-items:center; gap:8px;">
+              <span id="tech-details-dot" style="width:8px; height:8px; border-radius:50%; display:inline-block; background-color: var(--accent-blue);"></span>
+              <span id="tech-details-name">Skill</span>
+            </h4>
+            <p id="tech-details-desc" style="margin:0; font-size:0.85rem; color:var(--text-secondary); line-height:1.45;"></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section section-padding">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <h2 class="section-title">Building Future Success</h2>
+          <p class="section-subtitle">We are committed to delivering outstanding results that turn into long-term partnerships.</p>
+        </div>
+
+        <div class="partnership-card-wrapper" style="display: flex; justify-content: center; margin-top: 40px;">
+          <div class="testimonial-card glass-card" style="max-width: 720px; text-align: center; padding: 48px 32px; width: 100%;">
+            <p class="testimonial-text" style="font-size: 1.25rem; font-style: italic; line-height: 1.8; color: var(--text-primary); margin-bottom: 24px;">
+              "Your success story could be featured here. We're excited to build meaningful partnerships and deliver exceptional custom software for our future clients."
+            </p>
+            <div class="testimonial-author" style="justify-content: center;">
+              <span class="author-name" style="font-weight: 700;">PixelCraft Labs Partner Program</span>
+              <span class="author-company" style="color: var(--accent-blue);">Future Collaborative Milestones</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section section-padding">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Clarifying our workflow, technology selections, and engagement structures.</p>
+        </div>
+
+        <div class="faq-accordion-group">
+          
+          <div class="faq-item glass-card">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">What technologies do you recommend for high-performance mobile systems?</span>
+              <span class="faq-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" class="faq-arrow-icon">
+                  <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-answer">We recommend native development using Kotlin and Jetpack Compose, alongside Kotlin Multiplatform (KMP) for cross-platform sharing. For our backend database and authentication layers, we integrate Supabase or Firebase to guarantee sub-millisecond synchronization and clean offline-first architectures.</p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Why do you recommend Native Android development?</span>
+              <span class="faq-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" class="faq-arrow-icon">
+                  <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-answer">Building with native Kotlin and Jetpack Compose ensures that your application utilizes full hardware rendering capability. It delivers smooth 60 FPS scroll velocities, responsive gesture animations, and clean offline-first capabilities.</p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">How does technical SEO differ from standard optimization?</span>
+              <span class="faq-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" class="faq-arrow-icon">
+                  <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-answer">Standard SEO often relies on simple plugins and meta tag audits. We optimize the rendering paths, compress assets, configure structural sitemaps, and write clean semantic DOM models. This ensures your site achieves a perfect 100/100 Core Web Vitals score.</p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-card">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Who will be coding my project?</span>
+              <span class="faq-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" class="faq-arrow-icon">
+                  <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-answer">Every project is designed, scoped, and developed directly by our Lead Architect. This ensures premium quality control, zero intermediate communication gaps, and dedicated technical care for your platform.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <h2 class="section-title">Let's Build Something Great Together</h2>
+          <p class="section-subtitle">Whether you're a startup, local business, or growing company, PixelCraft Labs is ready to transform your ideas into premium digital products.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Options -->
+          <div class="contact-info-panel glass-card">
+            <h3 class="panel-title">Direct Connections</h3>
+            <p class="panel-text">Have a project idea? Get in touch directly to discuss your business requirements.</p>
+
+            <div class="contact-links-list">
+              <a href="mailto:noorulakbar32@gmail.com" class="contact-item-link magnetic-btn">
+                <span class="c-icon-wrapper">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="c-label">Email Us</span>
+                  <span class="c-value">noorulakbar32@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/918098336237" target="_blank" rel="noopener" class="contact-item-link magnetic-btn">
+                <span class="c-icon-wrapper bg-green-accent">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="c-label">WhatsApp & Call</span>
+                  <span class="c-value">8098336237</span>
+                </div>
+              </a>
+
+              <a href="https://calendly.com/pixelcraftlabs" target="_blank" rel="noopener" class="contact-item-link magnetic-btn">
+                <span class="c-icon-wrapper">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                    <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="c-label">Schedule Consultation</span>
+                  <span class="c-value">Free Project Roadmap Call</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Stylized CSS Map container -->
+            <div class="map-placeholder">
+              <div class="map-glow"></div>
+              <svg viewBox="0 0 300 120" class="map-vector" aria-label="Stylized Map of Remote Operations Location">
+                <path d="M10,20 Q50,60 90,30 T170,80 T250,40" fill="none" stroke="#EEF2F7" stroke-width="8"/>
+                <path d="M50,10 Q100,90 150,40 T220,100" fill="none" stroke="#EEF2F7" stroke-width="6"/>
+                <line x1="150" y1="10" x2="150" y2="120" stroke="#EEF2F7" stroke-width="4"/>
+                <circle cx="150" cy="50" r="16" fill="rgba(37,99,235,0.15)"/>
+                <circle cx="150" cy="50" r="6" fill="#2563EB"/>
+              </svg>
+              <span class="map-label font-mono">Boutique Studio // Remote Operations</span>
+            </div>
+          </div>
+
+          <!-- Luxury Contact Form -->
+          <div class="contact-form-panel glass-card">
+            <form id="inquiry-form" class="luxury-form" novalidate>
+              <!-- Configure Web3Forms Email Routing Key -->
+              <!-- Replace value with your actual Web3Forms Access Key from https://web3forms.com -->
+              <input type="hidden" name="access_key" value="044b1962-e24b-41ed-8d7e-92d6a65d660c">
+
+              <div class="form-group">
+                <input type="text" id="form-name" name="name" class="form-input" required placeholder=" ">
+                <label for="form-name" class="form-label">Full Name</label>
+                <span class="validation-bar"></span>
+                <span class="validation-message">Please input your name</span>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="form-email" name="email" class="form-input" required placeholder=" ">
+                <label for="form-email" class="form-label">Email Address</label>
+                <span class="validation-bar"></span>
+                <span class="validation-message">Please input a valid email</span>
+              </div>
+
+              <div class="form-group">
+                <select id="form-service" name="service" class="form-input" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="web">Web Development (Business, Admin Panel, SaaS)</option>
+                  <option value="mobile">Mobile Development (Native Android, Flutter)</option>
+                  <option value="seo">Technical SEO & Core Web Vitals Optimization</option>
+                  <option value="support">Maintenance, SLA Support & Bug Fixing</option>
+                </select>
+                <label for="form-service" class="form-label">Requested Service</label>
+                <span class="validation-bar"></span>
+                <span class="validation-message">Please select a service option</span>
+              </div>
+
+              <div class="form-group">
+                <textarea id="form-message" name="message" class="form-input" rows="4" required placeholder=" "></textarea>
+                <label for="form-message" class="form-label">Project Details & Consultation Goals</label>
+                <span class="validation-bar"></span>
+                <span class="validation-message">Please outline your product objectives</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit magnetic-btn">
+                <span>Submit Inquiry</span>
+                <span class="spinner" style="display:none;"></span>
+              </button>
+              
+              <div class="form-status-alert status-success" style="display:none;">
+                <span class="alert-icon">✓</span>
+                <p>Inquiry received. Our Lead Architect will review and respond directly within 24 hours.</p>
+              </div>
+
+              <div class="form-status-alert status-error" style="display:none;">
+                <span class="alert-icon">⚠</span>
+                <p>Please resolve the field requirements above before transmitting.</p>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- DYNAMIC PREMIUM FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <!-- Brand Block -->
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo" aria-label="PixelCraft Labs Home">
+          <img src="/logo-custom.jpg" alt="PixelCraft Labs Logo" class="logo-icon" width="28" height="28" style="border-radius:50%;">
+          <span class="logo-text">PixelCraft <span class="logo-accent">Labs</span></span>
+        </a>
+        <p class="brand-tagline">Turning Ideas Into Digital Reality.</p>
+        
+        <!-- Live Status Bar -->
+        <div class="footer-status-bar">
+          <span class="status-dot"></span>
+          <span>Status: Available for Q3 2026 Projects</span>
+        </div>
+        
+        <!-- Live Local Clock -->
+        <div class="footer-clock" id="footer-clock">
+          Studio Time: Loading...
+        </div>
+      </div>
+
+      <!-- Links Grid -->
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4 class="footer-col-title font-mono">Services</h4>
+          <a href="#services">Mobile App Dev</a>
+          <a href="#services">Web Applications</a>
+          <a href="#services">Technical SEO</a>
+          <a href="#services">Support & Maintenance</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title font-mono">Studio</h4>
+          <a href="#about">The Foundation</a>
+          <a href="#process">Our Process</a>
+          <a href="#comparison">The Distinction</a>
+          <a href="#contact">Get In Touch</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title font-mono">Socials</h4>
+          <a href="https://github.com/pixelcraftlabs" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/company/pixelcraftlabs" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://twitter.com/pixelcraftlabs" target="_blank" rel="noopener">Twitter / X</a>
+        </div>
+      </div>
+
+      <!-- Newsletter Box -->
+      <div class="footer-newsletter">
+        <h4 class="footer-col-title font-mono">Newsletter</h4>
+        <p class="newsletter-desc">Get quarterly insights on mobile engineering, tech stacks, and speed optimization.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Enter email" class="newsletter-input" required aria-label="Newsletter email input">
+          <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe to newsletter">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
+        <span class="newsletter-success" id="newsletter-success">Subscribed successfully.</span>
+      </div>
+
+      <!-- Bottom Grid Divider -->
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 PixelCraft Labs. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+
+      <!-- Big outlined brand text behind -->
+      <div class="footer-big-brand">
+        PIXELCRAFT
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Entry Script Bundle -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
