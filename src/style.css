@@ -31,6 +31,10 @@
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-luxury: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Scrollbar Theme colors */
+  --scroll-thumb: #CBD5E1;
+  --scroll-thumb-hover: #94A3B8;
 }
 
 .dark-theme {
@@ -48,6 +52,10 @@
   --shadow-subtle: 0 4px 30px rgba(0, 0, 0, 0.3);
   --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 35px rgba(99, 102, 241, 0.08);
+
+  /* Scrollbar Theme colors */
+  --scroll-thumb: #334155;
+  --scroll-thumb-hover: #475569;
 }
 
 
@@ -88,11 +96,11 @@ body {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: var(--scroll-thumb);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: var(--scroll-thumb-hover);
 }
 
 /* Container */
@@ -169,7 +177,7 @@ body.hover-interactive #custom-cursor-dot {
   background-color: var(--accent-cyan);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (pointer: coarse) {
   #custom-cursor, #custom-cursor-dot {
     display: none !important;
   }
@@ -2454,6 +2462,18 @@ select.form-input {
 }
 
 @media (max-width: 768px) {
+  .navbar-wrapper {
+    width: 100%;
+    left: 0;
+    transform: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-wrapper.nav--hidden {
+    transform: translateY(100px);
+  }
+
   .navbar {
     width: 90%;
     padding: 10px 20px;
